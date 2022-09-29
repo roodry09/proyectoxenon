@@ -1,0 +1,195 @@
+body{
+    background-color: #E6E6E6;
+    font-family: 'KoHo', sans-serif;
+    overflow-x: hidden!important;
+    margin: 0px!important;
+    padding: 0px!important;
+}
+nav{
+    position: absolute;
+}
+video{
+    width: 100%;
+}
+
+h2{
+    text-align: center;
+    margin-top: 5px !important;
+}
+
+/* historia - biografia */
+.bio{
+    background-image: url(../images/bg_09.jpg);
+    background-position: center top;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.videohist{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+
+p.biografia{
+    text-align: center;
+    color: white;
+    background: rgba(0, 102, 192, 0.1);
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* Discografia*/
+
+.tabla{
+    background-image:url(..//images/bg_11.jpg);
+    background-position: center top;
+    background-repeat:no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+main.noticias{
+    background-color: beige;
+    color: black;
+
+}
+body.noticias{
+    background-color: beige;
+    color: black;
+}
+
+
+
+/* Libros */
+.grid-container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns:  1.1fr 1.1fr ;
+    grid-template-rows:  0.2fr 1.2fr ;
+    grid-template-areas:
+
+    " main main "
+    " content1 content2 ";
+        
+    background-image: url(../images/channels4_banner.jpg);
+    background-position: center top;
+    background-repeat:no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+main {
+    background-color: rgb(247, 191, 191); ;
+    grid-area:main;
+    font-size:30px;
+    border-radius:var(--main-radius);
+    padding-top:var(--main-padding);
+}
+
+#content1 {
+    background-color:rgba(0, 102, 192, 0.1);
+    grid-area:content1;
+    border-radius:var(--main-radius);
+    padding-top:var(--main-padding);
+    border-style:groove;
+}
+
+#content2 {
+    background-color:rgba(0, 102, 192, 0.1);
+    grid-area:content2;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    border-style:groove;
+}
+/*dispositivo movil */
+@media only screen and (max-width: 550px) {
+    .grid-container {
+grid-template-columns: auto ;
+grid-template-rows:  40px 250px  ;
+grid-template-areas:
+ 
+        "main"
+        "content1"
+        "content2";
+    text-align: center; 
+    background-image: url(../images/libro3.jpg);
+      background-color:      #212529;
+        background-position: center top;
+        background-repeat:no-repeat;
+        background-size:auto auto;
+        text-align: center;
+    }
+    .librov{
+        display: none;
+    }
+#content1{
+    background: rgba(247, 191, 191, 0.5);
+    font-weight: bold;
+}
+#content2{
+    background: rgba(247, 191, 191, 0.5);
+    font-weight: bold;
+
+}
+    }
+
+/*Contacto*/
+.formularioc{
+    align-content: center;
+background-image: url(../images/contact.jpg);
+background-position: center top;
+background-repeat:no-repeat;
+background-size:cover;
+color: seashell;
+}
+.form1{
+    text-align: center;
+}
+/*Tablet*/
+@media only screen and ( max-width: 651px) {.formularioc{
+    align-content: center;
+background-image: url(../images/bg_05.jpg);
+background-position: center top;
+background-repeat:no-repeat;
+background-size:cover;
+color: seashell;}}
+
+@media only screen and (max-width: 550px) {.formularioc{
+    align-content: center;
+background-image: url(../images/bg_03.jpg);
+background-position: center top;
+background-repeat:no-repeat;
+background-size:cover;
+color: seashell;}}
+
+/*footer Social*/
+  .Socialdiv{
+      text-align: center;
+      position: static;
+      background-color:      #212529;
+      ;
+  }
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  .fa:hover {
+    opacity: 0.7;
+}
+.fa-envelope{
+    color: white;
+}
+.fa-youtube {
+    color: red;
+  }
+.fa-instagram {
+
+    color: pink;
+  }

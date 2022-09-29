@@ -1,0 +1,26 @@
+<main class="holder-n">
+    <h2>Noticias</h2>
+    {{#each novedades}}
+    <div class="noticias">
+
+        <h3>{{titulo}}  </h3>
+            <h4>{{subtitulo}}</h4>
+                {{#if imagen}}
+                <img src="{{imagen}}" alt="img">
+                {{/if}}
+                <p>{{{cuerpo}}}
+
+</p>
+{{/each}}
+
+    </div>
+
+
+
+
+
+
+
+
+
+</main>

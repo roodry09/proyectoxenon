@@ -1,0 +1,31 @@
+
+<div class="container" style="margin-top: 55px;">
+            <h3 style="text-align: center; margin-bottom: 20px" >Modificar noticia</h3>
+    <div class="row " style="align-content: center;">
+        <form action="/admin/novedades/modificar" style="text-align: center;" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="id" value="{{novedades.id}}">
+            <div class="mb-3">
+                <input type="text"  class="form-control" placeholder="Titulo" name="titulo" value="{{novedades.titulo}}">
+            </div>
+            <div class="mb-3">
+                <textarea type="text" class="form-control" cols="160" rows="2" placeholder="Subtitulo" name="subtitulo" value="">{{novedades.subtitulo}}</textarea>
+            </div>
+            <div class="mb-3">
+                {{novedades.img_id}}
+                <p><label>img</label><input type="file" class="form-control" name="imagen" id="imagen"></label></p>
+                <p><lavel for=""><input type="checkbox" name="img_delete" id="img_delete" value="1"> Eliminar la imagen actual</lavel>
+                <input type="hidden" name="img_original" value="{{novedades.img_id}}"></p>
+            </div>
+            <div class="mb-3">
+                <textarea type="text" class="form-control" rows="8"placeholder="Novedad" name="cuerpo"value="">{{novedades.cuerpo}}</textarea>
+            </div> 
+                <input type="submit" size="30" value="Modificar">
+        </form>
+        {{#if error}}
+        <p>{{message}}</p>
+        {{/if}}
+
+                    
+
+    </div>
+</div>
