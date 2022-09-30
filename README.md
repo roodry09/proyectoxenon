@@ -9,6 +9,6 @@ CSS//
 Javascript//
 Nodejs//
 Handlebarsjs//
-Cleardb - MySQL
+Cleardb - MySQL - PHP
 
 Se tiene acceso a un CRUD sencillo dentro de la app de la sección Novedades.
